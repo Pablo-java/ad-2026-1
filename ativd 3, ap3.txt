@@ -19,9 +19,10 @@ comissao <- totaldevendas * 0.15;
 
 salariototal <- salariofixo + comissao;
 
-escreva("Seu salário fixo é de: ", salariofixo, "E o seu salário fixo + a comissão é de: ", salariototal);
+escreva("Seu salário fixo é de: ", salariofixo);
 escreva("E o seu salário fixo + a comissão é de: ", salariototal, " ", nomedovendedor);
 
 Fim
+
 
 
