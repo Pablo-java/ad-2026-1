@@ -1,0 +1,25 @@
+Algoritmo<Vendedor>
+
+var
+caractere: nomedovendedor;
+real: salariofixo, totaldevendas, comissao, salariototal;
+
+Início
+
+escreva("Digite seu nome: ");
+leia(nomedovendedor);
+
+escreva("Digite seu salário: ");
+leia(salariofixo);
+
+escreva("Digite o total de vendas: ");
+leia(totaldevendas);
+
+comissao <- totaldevendas * 0.15;
+
+salariototal <- salariofixo + comissao;
+
+escreva("Seu salário fixo é de: ", salariofixo, "E o seu salário fixo + a comissão é de: ", salariototal);
+
+Fim
+

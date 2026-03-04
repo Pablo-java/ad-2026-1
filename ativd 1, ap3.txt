@@ -1,0 +1,25 @@
+Algoritmo<notas do aluno>
+
+var
+caractere: nomedoaluno;
+real: num1, num2, num3, media;
+
+Início
+
+escreva("Digite seu nome: ");
+leia(nomedoaluno);
+
+escreva("Digite a nota da sua primeira prova: ");
+leia(num1);
+
+escreva("Digite a nota da sua segunda prova: ");
+leia(num2);
+
+escreva("Digite a nota da sua terceira prova: ");
+leia(num3);
+
+media <- (num1+ num2+ num3) / 3;
+
+escreva("A média aritmética das suas 3 provas é: ", media, " ", nomedoaluno);
+
+Fim
