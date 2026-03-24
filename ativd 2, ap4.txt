@@ -1,0 +1,15 @@
+algoritmo "Temperatura em graus Fahrenheit"
+
+var
+celsius, fahrenheit: real;
+
+inicio
+
+escreva("Digite a Temperatura(C): ");
+leia(celsius);
+
+fahrenheit <- (9 * celsius + 160) / 5;
+
+escreva("A temperatura em Fahrenheit é: ", fahrenheit);
+
+fimalgoritmo

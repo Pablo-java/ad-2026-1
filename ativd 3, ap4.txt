@@ -1,0 +1,21 @@
+algoritmo "Conversão de dólar para real"
+
+var
+cotacaodolar, dolaresdisponiveis, reaisdisponiveis: real;
+
+inicio
+
+escreva("Digite a Cotação do dólar: ");
+leia(cotacaodolar);
+
+escreva("Digite quantos dólares você tem: ");
+leia(dolaresdisponiveis);
+
+reaisdisponiveis <- cotacaodolar * dolaresdisponiveis;
+
+escreva("Você tem: R$ ", reaisdisponiveis);
+
+fimalgoritmo
+
+
+

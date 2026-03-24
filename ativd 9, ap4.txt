@@ -1,0 +1,44 @@
+algoritmo "Concessionária"
+
+var
+valordesconto, valorpago, valorfinal: real;
+ano, totalcarros, ate2010: inteiro;
+opcao: caractere;
+
+inicio
+
+totalcarros <- 0;
+ate2010 <- 0;
+opcao <- "S";
+
+enquanto opcao = "S" faca
+
+escreva("Digite o ano do carro: ");
+leia(ano);
+
+escreva("Digite o valor do carro: ");
+leia(valorpago);
+
+se ano <= 2010 entao
+valordesconto <- valorpago * 0.12;
+ate2010 <- ate2010 + 1;
+senao
+valordesconto <- valorpago * 0.07;
+fimse
+
+valorfinal <- valorpago - valordesconto;
+
+escreva("O desconto é: R$ ", valordesconto);
+escreva("O valor final é: R$ ", valorfinal);
+
+totalcarros <- totalcarros + 1;
+
+escreva("Deseja continuar? (S/N): ");
+leia(opcao);
+
+fimenquanto
+
+escreva("Total de carros até 2010: ", ate2010);
+escreva("Total geral de carros: ", totalcarros);
+
+fimalgoritmo
