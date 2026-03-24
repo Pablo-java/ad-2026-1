@@ -1,0 +1,22 @@
+Algoritmo<valores A e B>
+
+var
+real: A, B, temp;
+
+Início
+
+escreva("Digite o valor de A: ");
+leia(A);
+
+escreva("Digite o valor de B: ");
+leia(B);
+
+temp <- A;
+A <- B;
+B <- temp;
+
+escreva("Após a troca: ");
+escreva("A = ", A);
+escreva("B = ", B);
+
+Fim
