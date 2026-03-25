@@ -1,0 +1,138 @@
+ATIVIDADE 5
+
+
+algoritmo "Custo carro"
+
+var
+custofabrica, impostos, distribuidor, custofinal: real;
+
+inicio
+
+escreva("Digite o custo de fábrica: ");
+leia(custofabrica);
+
+impostos <- custofabrica * 0.45;
+
+custofinal <- custofabrica + impostos;
+
+distribuidor  <- custofinal * 0.28;
+
+custofinal <- custofinal + distribuidor;
+
+escreva("O custo final do carro é: ", custofinal);
+
+fimalgoritmo
+
+---------------------------------------------------
+
+ATIVIDADE 6
+
+
+algoritmo "Maior número"
+
+var
+n1, n2, maior: inteiro;
+
+inicio
+
+escreva("Escreva o primeiro número: ");
+leia(n1);
+
+escreva("Escreva o segundo número: ");
+leia(n2);
+
+se n1 > n2 entao
+maior <- n1;
+
+senao
+maior <- n2;
+
+fimse
+
+escreva("O maior número é: ", maior);
+
+se (maior >= 1 e maior <= 99) entao
+escreva("Está entre 1 e 99");
+senao se (maior >= 100 e maior <= 199) entao
+escreva("Está entre 100 e 199");
+senao
+escreva("É maior ou igual a 200");
+
+fimse
+
+fimalgoritmo
+
+
+----------------------------------------------------
+
+ATIVIDADE 7
+
+algoritmo "Notas aluno"
+
+var
+nome: caractere;
+nota1, nota2, nota3, soma, media: real;
+
+inicio
+
+escreva("Digite o nome do aluno: ");
+leia(nome);
+
+escreva("Primeira nota: ");
+leia(nota1);
+
+escreva("Segunda nota: ");
+leia(nota2);
+
+escreva("Terceira nota: ");
+leia(nota3);
+
+soma <- (nota1 + nota2) + nota3;
+media <- soma / 3;
+
+escreva("Nome: ", nome);
+escreva("Soma das notas: ", soma);
+escreva("Média das notas: ", media);
+
+se media >= 7 entao
+escreva("Situação: Aprovado");
+senao se media <= 5 entao
+escreva("Situação: Reprovado");
+senao
+escreva("Situação: Recuperação");
+
+fimse
+
+fimalgoritmo
+
+
+-----------------------------------------------------------
+
+ATIVIDADE 8
+
+
+algoritmo "Classificar idades"
+
+var
+idade, i: inteiro;
+
+inicio
+
+para i de 1 ate 75 faca
+
+escreva("Digite a idade da pessoa ", i, ": ");
+leia(idade);
+
+se idade >= 60 entao
+escreva("Idoso");
+senao se idade >= 18 entao
+escreva("Maior de idade");
+senao
+escreva("Menor de idade");
+
+fimse
+
+fimpara
+
+fimalgoritmo
+

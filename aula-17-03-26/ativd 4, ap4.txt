@@ -1,0 +1,15 @@
+algoritmo "Valor depositado"
+
+var
+valordepositado, valorrendimento: real;
+
+inicio
+
+escreva("Digite seu valor depositado: ");
+leia(valordepositado);
+
+valorrendimento <- (valordepositado * 0.0070) + valordepositado;
+
+escreva("Seu valor com rendimento após 1 mês é de: ", valorrendimento);
+
+fimalgoritmo

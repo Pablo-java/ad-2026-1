@@ -1,0 +1,53 @@
+algoritmo "Tabuada"
+
+funcao tabuada(n: inteiro, o: caractere, t: inteiro);
+
+var
+resultado: real;
+i: inteiro;
+
+inicio
+
+para i de 1 ate t faca
+
+se o = "S" entao
+resultado <- n + i;
+escreva(n, " + ", i, " = ", resultado);
+
+senao se o = "U" entao
+resultado <- n - i;
+escreva(n, " - ", i, " = ", resultado);
+
+senao se o = "M" entao
+resultado <- n * i;
+escreva(n, " * ", i, " = ", resultado);
+
+senao se o = "D" entao
+resultado <- n / i;
+escreva(n, " / ", i, " = ", resultado);
+
+fimse
+
+fimpara
+
+fimfuncao
+
+var
+n, t: inteiro;
+o: caractere;
+
+inicio
+
+escreva("Digite o valor de N: ");
+leia(n);
+
+escreva("Digite o operador (S/U/M/D): ");
+leia(o);
+
+escreva("Digite o valor de T: ");
+leia(t);
+
+tabuada(n, o, t);
+
+fimalgoritmo
+
