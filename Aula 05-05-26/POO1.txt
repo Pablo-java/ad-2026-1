@@ -1,0 +1,29 @@
+public class Pessoa {
+    String nome;
+    int idade;
+
+    void apresentar() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+    }
+
+    void fazerAniversario() {
+        idade++;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Pessoa p1 = new Pessoa();
+
+        p1.nome = "Pablo";
+        p1.idade = 18;
+
+        p1.apresentar();
+
+        p1.fazerAniversario();
+
+        System.out.println("Após aniversário:");
+        p1.apresentar();
+    }
+}

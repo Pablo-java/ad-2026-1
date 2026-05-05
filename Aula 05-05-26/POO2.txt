@@ -1,0 +1,31 @@
+public class Calculadora {
+
+    int somar(int a, int b) {
+        return a + b;
+    }
+
+    int subtrair(int a, int b) {
+        return a - b;
+    }
+
+    int multiplicar(int a, int b) {
+        return a * b;
+    }
+
+    double dividir(int a, int b) {
+        if (b == 0) {
+            System.out.println("Erro: divisão por zero");
+            return 0;
+        }
+        return (double) a / b;
+    }
+}
+
+public class MainCalculadora {
+    public static void main(String[] args) {
+        Calculadora calc = new Calculadora();
+
+        System.out.println("Soma: " + calc.somar(10, 5));
+        System.out.println("Divisão: " + calc.dividir(10, 2));
+    }
+}

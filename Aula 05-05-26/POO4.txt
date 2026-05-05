@@ -1,0 +1,35 @@
+public class Produto {
+    String nome;
+    double preco;
+    int quantidade;
+
+    double calcularValorTotal() {
+        return preco * quantidade;
+    }
+
+    void exibirProduto() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Preço: " + preco);
+        System.out.println("Quantidade: " + quantidade);
+        System.out.println("Valor total: " + calcularValorTotal());
+    }
+}
+
+public class MainProduto {
+    public static void main(String[] args) {
+        Produto p1 = new Produto();
+        Produto p2 = new Produto();
+
+        p1.nome = "Mouse";
+        p1.preco = 50;
+        p1.quantidade = 2;
+
+        p2.nome = "Teclado";
+        p2.preco = 120;
+        p2.quantidade = 1;
+
+        p1.exibirProduto();
+        System.out.println("--------------");
+        p2.exibirProduto();
+    }
+}

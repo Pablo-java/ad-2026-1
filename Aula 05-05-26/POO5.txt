@@ -1,0 +1,30 @@
+public class Aluno {
+    String nome;
+    double nota1;
+    double nota2;
+
+    double calcularMedia() {
+        return (nota1 + nota2) / 2;
+    }
+
+    void verificarSituacao() {
+        if (calcularMedia() >= 6) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
+    }
+}
+
+public class MainAluno {
+    public static void main(String[] args) {
+        Aluno aluno = new Aluno();
+
+        aluno.nome = "Pablo";
+        aluno.nota1 = 7.5;
+        aluno.nota2 = 8.0;
+
+        System.out.println("Média: " + aluno.calcularMedia());
+        aluno.verificarSituacao();
+    }
+}
